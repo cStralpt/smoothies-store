@@ -7,10 +7,10 @@ import {
 } from "lucide-react";
 
 export default function Footer() {
-  const iconSize = "h-6 w-6";
+  const iconSize = "h-5 w-5";
   return (
-    <footer className="footer sticky bottom-0 left-0 z-10 w-full border-t">
-      <nav className="w-full flex gap-4 justify-between text-sm text-gray-500">
+    <footer className="footer sticky bottom-0 left-0 z-10 w-full border-t overflow-hidden overflow-x-auto bg-white">
+      <nav className="w-full flex justify-between text-[10px] text-gray-500">
         {[
           {
             icon: <Home strokeWidth={1} className={`${iconSize}`} />,
