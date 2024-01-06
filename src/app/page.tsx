@@ -1,3 +1,4 @@
+import { Slider } from "@/components/home/Slider";
 import { getUserAuth } from "@/lib/auth/utils";
 
 export default async function Home() {
@@ -10,6 +11,7 @@ export default async function Home() {
         </pre>
       ) : null}
       {/* <SignIn /> */}
+      <Slider />
     </main>
   );
 }
