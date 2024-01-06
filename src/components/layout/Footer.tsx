@@ -9,7 +9,7 @@ import {
 export default function Footer() {
   const iconSize = "h-5 w-5";
   return (
-    <footer className="footer sticky bottom-0 left-0 right-0 z-10 w-full border-t overflow-hidden overflow-x-auto bg-white">
+    <footer className="sticky bottom-0 bg-white border-t">
       <nav className="w-full flex justify-between text-[10px] text-gray-500">
         {[
           {
