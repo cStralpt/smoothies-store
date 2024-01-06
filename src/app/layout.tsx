@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} h-screen overflow-hidden overflow-y-auto flex flex-col justify-between`}
+        className={`${inter.className} h-screen overflow-hidden overflow-y-auto flex flex-col justify-between bg-white`}
       >
         <ThemeProvider
           attribute="class"
