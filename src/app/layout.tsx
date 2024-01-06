@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} h-screen overflow-hidden overflow-y-auto`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
