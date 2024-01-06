@@ -5,6 +5,7 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/toaster";
 import NextAuthProvider from "@/lib/auth/Provider";
 import Footer from "@/components/layout/Footer";
+import Header from "@/components/layout/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -30,6 +31,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <NextAuthProvider>
+            <Header />
             {children}
             <Footer />
           </NextAuthProvider>
