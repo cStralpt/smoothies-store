@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Toaster } from "@/components/ui/toaster";
 import NextAuthProvider from "@/lib/auth/Provider";
+import Footer from "@/components/layout/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} h-screen overflow-hidden overflow-y-auto`}
+        className={`${inter.className} h-screen overflow-hidden overflow-y-auto flex flex-col justify-between`}
       >
         <ThemeProvider
           attribute="class"
@@ -28,8 +29,10 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <NextAuthProvider>{children}</NextAuthProvider>
-
+          <NextAuthProvider>
+            {children}
+            <Footer />
+          </NextAuthProvider>
           <Toaster />
         </ThemeProvider>
       </body>
