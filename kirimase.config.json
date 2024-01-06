@@ -1,0 +1,16 @@
+{
+  "hasSrc": true,
+  "packages": [
+    "shadcn-ui",
+    "next-auth"
+  ],
+  "preferredPackageManager": "pnpm",
+  "t3": false,
+  "alias": "@",
+  "rootPath": "src/",
+  "componentLib": "shadcn-ui",
+  "orm": null,
+  "driver": null,
+  "provider": null,
+  "auth": "next-auth"
+}
