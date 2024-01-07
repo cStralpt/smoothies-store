@@ -1,6 +1,7 @@
 import { iconSize, iconStrokeWidth } from "@/constants/icon";
 import { CupSoda } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Menus() {
   return (
@@ -56,23 +57,22 @@ export default function Menus() {
               menuName: "CupSoda",
             },
           ].map((smoothie) => (
-            <div
-              key={smoothie.menuName}
-              className="flex flex-col hover:opacity-50"
-            >
-              <div className="">
-                <Image
-                  src={smoothie.image}
-                  className="aspect-auto w-full object-contain border-white"
-                  alt="smoothies image"
-                  width={400}
-                  height={400}
-                />
+            <Link key={smoothie.menuName} href="/purchase?id=xxx123">
+              <div className="flex flex-col hover:opacity-50">
+                <div className="">
+                  <Image
+                    src={smoothie.image}
+                    className="aspect-auto w-full object-contain border-white"
+                    alt="smoothies image"
+                    width={400}
+                    height={400}
+                  />
+                </div>
+                <b className="w-full text-center bg-gray-200 text-emerald-950 p-4 rounded-b-[30px]">
+                  {smoothie.menuName}
+                </b>
               </div>
-              <b className="w-full text-center bg-gray-200 text-emerald-950 p-4 rounded-b-[30px]">
-                {smoothie.menuName}
-              </b>
-            </div>
+            </Link>
           ))}
         </div>
       </div>

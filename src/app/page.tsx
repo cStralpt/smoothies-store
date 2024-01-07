@@ -1,6 +1,7 @@
 import { Slider } from "@/components/home/Slider";
 import Image from "next/image";
 import { getUserAuth } from "@/lib/auth/utils";
+import Link from "next/link";
 
 export default async function Home() {
   const { session } = await getUserAuth();
@@ -65,23 +66,22 @@ export default async function Home() {
               menuName: "Wellness Shots",
             },
           ].map((recMenu) => (
-            <div
-              key={recMenu.menuName}
-              className="flex flex-col justify-center items-center hover:opacity-50 rounded-xl"
-            >
-              <div className="rounded-xl bg-emerald-50/90 p-4">
-                <Image
-                  src={recMenu.image}
-                  className="aspect-square w-full object-contain"
-                  alt="image"
-                  width={400}
-                  height={400}
-                />
+            <Link key={recMenu.menuName} href="/purchase?id=xxx123">
+              <div className="flex flex-col justify-center items-center hover:opacity-50 rounded-xl">
+                <div className="rounded-xl bg-emerald-50/90 p-4">
+                  <Image
+                    src={recMenu.image}
+                    className="aspect-square w-full object-contain"
+                    alt="image"
+                    width={400}
+                    height={400}
+                  />
+                </div>
+                <label className="text-center font-light text-[10px]">
+                  {recMenu.menuName}
+                </label>
               </div>
-              <label className="text-center font-light text-[10px]">
-                {recMenu.menuName}
-              </label>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
