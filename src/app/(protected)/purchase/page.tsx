@@ -60,14 +60,14 @@ export default function Purchase() {
                 price: 137000,
               },
             ].map((smoothie) => (
-              <div key={smoothie.menuName} className="flex p-2">
+              <div key={smoothie.menuName} className="flex p-2 gap-2">
                 <Checkbox
                   id={smoothie.menuName}
                   name={smoothie.menuName}
                   className="h-5 w-5"
                 />
-                <label htmlFor={smoothie.menuName} className=" flex grow">
-                  <div className="overflow-hidden rounded-xl">
+                <label htmlFor={smoothie.menuName} className="flex grow gap-2">
+                  <div className="overflow-hidden rounded-xl border">
                     <Image
                       src="https://www.planetsmoothie.com/assets/webp/menu/newandfeatured/thumb.webp"
                       className="aspect-square w-24 h-24 object-contain border-white"
