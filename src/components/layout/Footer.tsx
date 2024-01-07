@@ -15,7 +15,11 @@ export default function Footer() {
         {[
           {
             icon: (
-              <Home strokeWidth={iconStrokeWidth} className={`${iconSize}`} />
+              <Home
+                strokeWidth={iconStrokeWidth}
+                size={iconSize}
+                className={`${iconSize}`}
+              />
             ),
             label: "Home",
             destination: "/",
@@ -24,6 +28,7 @@ export default function Footer() {
             icon: (
               <MapPinned
                 strokeWidth={iconStrokeWidth}
+                size={iconSize}
                 className={`${iconSize}`}
               />
             ),
@@ -34,6 +39,7 @@ export default function Footer() {
             icon: (
               <CupSoda
                 strokeWidth={iconStrokeWidth}
+                size={iconSize}
                 className={`${iconSize}`}
               />
             ),
@@ -44,6 +50,7 @@ export default function Footer() {
             icon: (
               <BadgeDollarSign
                 strokeWidth={iconStrokeWidth}
+                size={iconSize}
                 className={`${iconSize}`}
               />
             ),
@@ -54,6 +61,7 @@ export default function Footer() {
             icon: (
               <UserRound
                 strokeWidth={iconStrokeWidth}
+                size={iconSize}
                 className={`${iconSize}`}
               />
             ),

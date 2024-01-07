@@ -84,6 +84,7 @@ export default function Menus() {
                 icon: (
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
+                    size={iconSize}
                     className={`${iconSize} text-red-600`}
                   />
                 ),
@@ -93,6 +94,7 @@ export default function Menus() {
                 icon: (
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
+                    size={iconSize}
                     className={`${iconSize} text-green-400`}
                   />
                 ),
@@ -102,6 +104,7 @@ export default function Menus() {
                 icon: (
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
+                    size={iconSize}
                     className={`${iconSize} text-orange-400`}
                   />
                 ),
@@ -111,6 +114,7 @@ export default function Menus() {
                 icon: (
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
+                    size={iconSize}
                     className={`${iconSize} text-purple-400`}
                   />
                 ),
@@ -120,6 +124,7 @@ export default function Menus() {
                 icon: (
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
+                    size={iconSize}
                     className={`${iconSize} text-yellow-400`}
                   />
                 ),
@@ -129,6 +134,7 @@ export default function Menus() {
                 icon: (
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
+                    size={iconSize}
                     className={`${iconSize}`}
                   />
                 ),
