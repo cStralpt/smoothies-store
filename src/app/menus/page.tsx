@@ -77,7 +77,7 @@ export default function Menus() {
         </div>
       </div>
       <div className="sticky bottom-14 h-fit">
-        <div className="h-fit bg-white border rounded-full overflow-hidden overflow-x-auto w-full hide-scrollbar">
+        <div className="h-fit bg-white/50 backdrop-blur border rounded-full overflow-hidden overflow-x-auto w-full hide-scrollbar">
           <nav className="w-full flex justify-between text-[10px] text-gray-500">
             {[
               {
@@ -85,7 +85,7 @@ export default function Menus() {
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
                     size={iconSize}
-                    className={`${iconSize} text-red-600`}
+                    className={`text-red-600`}
                   />
                 ),
                 label: "Semua Menu",
@@ -95,7 +95,7 @@ export default function Menus() {
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
                     size={iconSize}
-                    className={`${iconSize} text-green-400`}
+                    className={`text-green-400`}
                   />
                 ),
                 label: "Vegan Green",
@@ -105,7 +105,7 @@ export default function Menus() {
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
                     size={iconSize}
-                    className={`${iconSize} text-orange-400`}
+                    className={`text-orange-400`}
                   />
                 ),
                 label: "Energy",
@@ -115,7 +115,7 @@ export default function Menus() {
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
                     size={iconSize}
-                    className={`${iconSize} text-purple-400`}
+                    className={`text-purple-400`}
                   />
                 ),
                 label: "Protein",
@@ -125,7 +125,7 @@ export default function Menus() {
                   <CupSoda
                     strokeWidth={iconStrokeWidth}
                     size={iconSize}
-                    className={`${iconSize} text-yellow-400`}
+                    className={`text-yellow-400`}
                   />
                 ),
                 label: "Toping",
