@@ -31,7 +31,7 @@ export default function Footer() {
           {
             icon: <BadgeDollarSign strokeWidth={1} className={`${iconSize}`} />,
             label: "Transaksi",
-            destination: "#",
+            destination: "/transactions",
           },
           {
             icon: <UserRound strokeWidth={1} className={`${iconSize}`} />,
