@@ -1,3 +1,4 @@
+import { iconStrokeWidth, iconSize } from "@/constants/icon";
 import {
   BadgeDollarSign,
   CupSoda,
@@ -8,33 +9,54 @@ import {
 import Link from "next/link";
 
 export default function Footer() {
-  const iconSize = "h-5 w-5";
   return (
     <footer className="sticky bottom-0 bg-white border-t">
       <nav className="w-full flex justify-between text-[10px] text-gray-500">
         {[
           {
-            icon: <Home strokeWidth={1} className={`${iconSize}`} />,
+            icon: (
+              <Home strokeWidth={iconStrokeWidth} className={`${iconSize}`} />
+            ),
             label: "Home",
             destination: "/",
           },
           {
-            icon: <MapPinned strokeWidth={1} className={`${iconSize}`} />,
+            icon: (
+              <MapPinned
+                strokeWidth={iconStrokeWidth}
+                className={`${iconSize}`}
+              />
+            ),
             label: "Cabang",
             destination: "/locations",
           },
           {
-            icon: <CupSoda strokeWidth={1} className={`${iconSize}`} />,
+            icon: (
+              <CupSoda
+                strokeWidth={iconStrokeWidth}
+                className={`${iconSize}`}
+              />
+            ),
             label: "Menu",
             destination: "/menus",
           },
           {
-            icon: <BadgeDollarSign strokeWidth={1} className={`${iconSize}`} />,
+            icon: (
+              <BadgeDollarSign
+                strokeWidth={iconStrokeWidth}
+                className={`${iconSize}`}
+              />
+            ),
             label: "Transaksi",
             destination: "/transactions",
           },
           {
-            icon: <UserRound strokeWidth={1} className={`${iconSize}`} />,
+            icon: (
+              <UserRound
+                strokeWidth={iconStrokeWidth}
+                className={`${iconSize}`}
+              />
+            ),
             label: "Akun",
             destination: "/account",
           },

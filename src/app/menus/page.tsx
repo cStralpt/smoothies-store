@@ -1,8 +1,8 @@
+import { iconSize, iconStrokeWidth } from "@/constants/icon";
 import { CupSoda } from "lucide-react";
 import Image from "next/image";
 
 export default function Menus() {
-  const iconSize = "h-5 w-5";
   return (
     <main className="grow flex flex-col gap-4 py-4">
       <div className="">
@@ -83,7 +83,7 @@ export default function Menus() {
               {
                 icon: (
                   <CupSoda
-                    strokeWidth={1}
+                    strokeWidth={iconStrokeWidth}
                     className={`${iconSize} text-red-600`}
                   />
                 ),
@@ -92,7 +92,7 @@ export default function Menus() {
               {
                 icon: (
                   <CupSoda
-                    strokeWidth={1}
+                    strokeWidth={iconStrokeWidth}
                     className={`${iconSize} text-green-400`}
                   />
                 ),
@@ -101,7 +101,7 @@ export default function Menus() {
               {
                 icon: (
                   <CupSoda
-                    strokeWidth={1}
+                    strokeWidth={iconStrokeWidth}
                     className={`${iconSize} text-orange-400`}
                   />
                 ),
@@ -110,7 +110,7 @@ export default function Menus() {
               {
                 icon: (
                   <CupSoda
-                    strokeWidth={1}
+                    strokeWidth={iconStrokeWidth}
                     className={`${iconSize} text-purple-400`}
                   />
                 ),
@@ -119,14 +119,19 @@ export default function Menus() {
               {
                 icon: (
                   <CupSoda
-                    strokeWidth={1}
+                    strokeWidth={iconStrokeWidth}
                     className={`${iconSize} text-yellow-400`}
                   />
                 ),
                 label: "Toping",
               },
               {
-                icon: <CupSoda strokeWidth={1} className={`${iconSize}`} />,
+                icon: (
+                  <CupSoda
+                    strokeWidth={iconStrokeWidth}
+                    className={`${iconSize}`}
+                  />
+                ),
                 label: "Anak-anak",
               },
             ].map((nav) => (
