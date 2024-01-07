@@ -36,7 +36,7 @@ export default function Footer() {
           {
             icon: <UserRound strokeWidth={1} className={`${iconSize}`} />,
             label: "Akun",
-            destination: "#",
+            destination: "/account",
           },
         ].map((nav) => (
           <Link href={nav.destination} key={nav.label}>
