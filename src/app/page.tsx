@@ -46,22 +46,22 @@ export default async function Home() {
             },
             {
               image:
-                "https://smoothiefactory.net/wp-content/uploads/2019/05/bowl.png",
+                "https://smoothiefactory.net/wp-content/uploads/2019/04/Ginger-Berry-Greens-150x156.png",
               menuName: "Healthy Halo Cups",
             },
             {
               image:
-                "https://smoothiefactory.net/wp-content/uploads/2019/05/Juice-Cleanse-Programs.png",
+                "https://smoothiefactory.net/wp-content/uploads/2019/04/Meal-Replacement-150x156.png",
               menuName: "Superfood Bowls",
             },
             {
               image:
-                "https://smoothiefactory.net/wp-content/uploads/2020/07/Immunity-Defense.jpg",
+                "https://smoothiefactory.net/wp-content/uploads/2019/04/Mango-Smoothie-150x156.png",
               menuName: "Juice Cleanse Programs",
             },
             {
               image:
-                "https://smoothiefactory.net/wp-content/uploads/2020/07/Baguettes-Salads-1.png",
+                "https://smoothiefactory.net/wp-content/uploads/2020/07/Avocado-Smoothie-150x156.png",
               menuName: "Wellness Shots",
             },
           ].map((recMenu) => (
