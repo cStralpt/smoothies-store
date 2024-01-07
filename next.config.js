@@ -12,6 +12,11 @@ const nextConfig = {
         hostname: "smoothiefactory.net",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "www.planetsmoothie.com",
+        pathname: "/**",
+      },
     ],
   },
 };
