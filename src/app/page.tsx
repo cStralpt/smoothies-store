@@ -5,7 +5,7 @@ import { getUserAuth } from "@/lib/auth/utils";
 export default async function Home() {
   const { session } = await getUserAuth();
   return (
-    <main className="grow">
+    <main className="grow flex flex-col gap-16">
       {session ? (
         <pre className="bg-card p-4 rounded-sm overflow-hidden">
           {JSON.stringify(session, null, 2)}
@@ -14,7 +14,7 @@ export default async function Home() {
       {/* <SignIn /> */}
       <Slider />
       <div className="flex flex-col items-center p-4">
-        <strong className="text-2xl w-full text-center mb-8">
+        <strong className="text-2xl w-full text-center mb-8 text-emerald-950">
           Rekomendasi Menu Kami
         </strong>
         <div className="grid grid-cols-4 grid-rows-3 gap-4">
@@ -83,6 +83,32 @@ export default async function Home() {
               </label>
             </div>
           ))}
+        </div>
+      </div>
+      <div className="flex flex-col px-4 text-center bg-emerald-50 py-12 gap-6">
+        <h1 className="text-3xl font-bold text-emerald-950">
+          Kami Persembahkan Buah Yang Berkualitas
+        </h1>
+        <p className="text-sm">
+          Kami dengan sepenuh hati menyajikan hidangan berkualitas tinggi dengan
+          bahan-bahan segar dan asli. Keaslian dan ketulusan dalam setiap sajian
+          kami adalah kunci utama kesuksesan.
+        </p>
+        <div className="grid grid-cols-2 gap-4">
+          <Image
+            src="https://images.unsplash.com/photo-1543208541-0961a29a8c3d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="aspect-square w-full object-cover border-4 border-white"
+            alt="image"
+            width={400}
+            height={400}
+          />
+          <Image
+            src="https://images.unsplash.com/photo-1601039641847-7857b994d704?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="aspect-square w-full object-cover border-4 border-white"
+            alt="image"
+            width={400}
+            height={400}
+          />
         </div>
       </div>
     </main>

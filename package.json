@@ -19,6 +19,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.0",
     "embla-carousel-react": "8.0.0-rc18",
+    "leaflet": "^1.9.4",
     "lucide-react": "^0.306.0",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
