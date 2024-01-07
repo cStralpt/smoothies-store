@@ -4,7 +4,7 @@ import { Map } from "lucide-react";
 
 export default function Locations() {
   return (
-    <div className="grow">
+    <main className="grow">
       <div className="p-4">
         <b className="text-2xl text-emerald-950 flex gap-4 items-center">
           <Map className="w-16 h-16" />
@@ -16,6 +16,6 @@ export default function Locations() {
           height="350px"
         />
       </div>
-    </div>
+    </main>
   );
 }
