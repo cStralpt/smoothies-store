@@ -1,3 +1,4 @@
+import { PayDrawer } from "@/components/purchase/PaymentDrawer";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { iconSize, iconStrokeWidth } from "@/constants/icon";
@@ -116,7 +117,7 @@ export default function Purchase() {
                 <p className="">Total</p>
                 <b className="">Rp 987.000</b>
               </div>
-              <Button className="bg-emerald-950 text-emerald-50">Bayar</Button>
+              <PayDrawer />
             </div>
           </div>
         </div>
