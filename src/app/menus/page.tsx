@@ -9,7 +9,7 @@ export default function Menus() {
       <div className="">
         <div className="flex p-4 bg-emerald-800 text-emerald-50 items-center my-8 gap-4">
           <div className="flex flex-col items-center justify-center">
-            <b className="text-xl">8</b>
+            <b className="text-xl">5</b>
             <div className="text-xs font-light">Menu Tersedia</div>
           </div>
           <div className="grow border-l-2 pl-2">
@@ -24,37 +24,27 @@ export default function Menus() {
             {
               image:
                 "https://www.planetsmoothie.com/assets/webp/menu/newandfeatured/thumb.webp",
-              menuName: "CupSoda",
+              menuName: "King Mango",
             },
             {
               image:
                 "https://www.planetsmoothie.com/assets/webp/menu/planetfavorites/thumb.webp",
-              menuName: "CupSoda",
+              menuName: "King Avocado",
             },
             {
               image:
                 "https://www.planetsmoothie.com/assets/webp/menu/energy/thumb.webp",
-              menuName: "CupSoda",
+              menuName: "King Strowberry",
             },
             {
               image:
                 "https://www.planetsmoothie.com/assets/webp/menu/superfood/thumb.webp",
-              menuName: "CupSoda",
+              menuName: "King Dragon",
             },
             {
               image:
                 "https://www.planetsmoothie.com/assets/webp/menu/protein/thumb.webp",
-              menuName: "CupSoda",
-            },
-            {
-              image:
-                "https://www.planetsmoothie.com/assets/webp/menu/mealreplacement/thumb.webp",
-              menuName: "CupSoda",
-            },
-            {
-              image:
-                "https://www.planetsmoothie.com/assets/webp/menu/planetkids/thumb.webp",
-              menuName: "CupSoda",
+              menuName: "King Chocolate",
             },
           ].map((smoothie) => (
             <Link key={smoothie.menuName} href="/purchase?id=xxx123">
@@ -69,7 +59,10 @@ export default function Menus() {
                   />
                 </div>
                 <b className="w-full text-center bg-gray-200 text-emerald-950 p-4 rounded-b-[30px]">
-                  {smoothie.menuName}
+                  <p className="font-semibold text-emerald-600">
+                    {smoothie.menuName}
+                  </p>
+                  <p className="text-xs font-bold">Rp.15K</p>
                 </b>
               </div>
             </Link>

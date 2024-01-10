@@ -35,7 +35,7 @@ export function PayDrawer() {
               <QRCode
                 size={256}
                 style={{ height: "100%", maxWidth: "100%", width: "100%" }}
-                value={`purchase-payment-id-${randomNumber}`}
+                value={`https://link.dana.id/minta/2ti5ce4ldul?params=[source=request_money]`}
                 viewBox={`0 0 256 256`}
               />
             </div>
