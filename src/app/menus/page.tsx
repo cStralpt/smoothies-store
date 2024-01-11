@@ -1,8 +1,6 @@
 import MenuList from "@/components/menus/MenuList";
 import { iconSize, iconStrokeWidth } from "@/constants/icon";
 import { CupSoda } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function Menus() {
   return (

@@ -23,47 +23,27 @@ export default async function Home() {
             {
               image:
                 "https://smoothiefactory.net/wp-content/uploads/2019/05/Juice.png",
-              menuName: "Juice Orange",
+              menuName: "King Mango",
             },
             {
               image:
                 "https://smoothiefactory.net/wp-content/uploads/2019/05/Real-Fruit-Smoothies.png",
-              menuName: "Real Fruit Smoothies",
+              menuName: "King Avocado",
             },
             {
               image:
                 "https://smoothiefactory.net/wp-content/uploads/2019/05/All-Natural-Frozen-Yogurt.png",
-              menuName: "All Natural Frozen Yogurt",
+              menuName: "King Strowberry",
             },
             {
               image:
                 "https://smoothiefactory.net/wp-content/uploads/2020/07/Salad-cup-1.png",
-              menuName: "Baguettes & Wraps",
+              menuName: "King Dragon",
             },
             {
               image:
                 "https://smoothiefactory.net/wp-content/uploads/2020/07/Healthy-Halo-Cup.jpg",
-              menuName: "Salads",
-            },
-            {
-              image:
-                "https://smoothiefactory.net/wp-content/uploads/2019/04/Ginger-Berry-Greens-150x156.png",
-              menuName: "Healthy Halo Cups",
-            },
-            {
-              image:
-                "https://smoothiefactory.net/wp-content/uploads/2019/04/Meal-Replacement-150x156.png",
-              menuName: "Superfood Bowls",
-            },
-            {
-              image:
-                "https://smoothiefactory.net/wp-content/uploads/2019/04/Mango-Smoothie-150x156.png",
-              menuName: "Juice Cleanse Programs",
-            },
-            {
-              image:
-                "https://smoothiefactory.net/wp-content/uploads/2020/07/Avocado-Smoothie-150x156.png",
-              menuName: "Wellness Shots",
+              menuName: "King Chocolate",
             },
           ].map((recMenu) => (
             <Link key={recMenu.menuName} href="/purchase?id=xxx123">
