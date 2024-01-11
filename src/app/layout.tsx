@@ -6,6 +6,7 @@ import { Toaster } from "@/components/ui/toaster";
 import NextAuthProvider from "@/lib/auth/Provider";
 import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
+import ReactQueryProvider from "@/components/ReactQueryProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -25,19 +26,21 @@ export default function RootLayout({
       <body
         className={`${inter.className} h-screen overflow-hidden overflow-y-auto flex flex-col justify-between bg-white`}
       >
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="system"
-          enableSystem
-          disableTransitionOnChange
-        >
-          <NextAuthProvider>
-            <Header />
-            {children}
-            <Footer />
-          </NextAuthProvider>
-          <Toaster />
-        </ThemeProvider>
+        <ReactQueryProvider>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            <NextAuthProvider>
+              <Header />
+              {children}
+              <Footer />
+            </NextAuthProvider>
+            <Toaster />
+          </ThemeProvider>
+        </ReactQueryProvider>
       </body>
     </html>
   );
