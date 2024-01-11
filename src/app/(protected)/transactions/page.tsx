@@ -6,46 +6,51 @@ export default function Transaction() {
       <div className="flex flex-col gap-4">
         {[
           {
-            date: "28 Januari 2024",
-            menu: ["Smoothie King"],
+            date: "08 Januari 2024",
+            menu: ["King Dragon"],
             isFinish: true,
-            purchaseTotal: 78000,
+            purchaseTotal: 15000,
+            image:
+              "https://www.planetsmoothie.com/assets/webp/menu/protein/thumb.webp",
           },
           {
-            date: "08 Maret 2024",
-            menu: ["Avocado Cheese"],
+            date: "09 Januari 2024",
+            image:
+              "https://www.planetsmoothie.com/assets/webp/menu/newandfeatured/thumb.webp",
+            menu: ["King Strowberry"],
             isFinish: false,
-            purchaseTotal: 97000,
+            purchaseTotal: 15000,
           },
           {
-            date: "28 Januari 2024",
-            menu: ["Smoothie King"],
+            date: "10 Januari 2024",
+            image:
+              "https://www.planetsmoothie.com/assets/webp/menu/energy/thumb.webp",
+            menu: ["King Chocolate"],
             isFinish: true,
-            purchaseTotal: 78000,
+            purchaseTotal: 15000,
           },
           {
-            date: "08 Maret 2024",
-            menu: ["Avocado Cheese"],
+            date: "11 Januari 2024",
+            image:
+              "https://www.planetsmoothie.com/assets/webp/menu/planetfavorites/thumb.webp",
+            menu: ["King Manggo"],
             isFinish: false,
-            purchaseTotal: 97000,
+            purchaseTotal: 15000,
           },
           {
-            date: "28 Januari 2024",
-            menu: ["Smoothie King"],
+            date: "12 Januari 2024",
+            image:
+              "https://www.planetsmoothie.com/assets/webp/menu/superfood/thumb.webp",
+            menu: ["King Avocado"],
             isFinish: true,
-            purchaseTotal: 78000,
-          },
-          {
-            date: "08 Maret 2024",
-            menu: ["Avocado Cheese"],
-            isFinish: false,
-            purchaseTotal: 97000,
+            purchaseTotal: 15000,
           },
         ].map((trx) => (
           <TransactionCard
             key={trx.date}
             date={trx.date}
             menu={trx.menu}
+            image={trx.image}
             isFinish={trx.isFinish}
             purchaseTotal={trx.purchaseTotal}
           />

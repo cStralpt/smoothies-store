@@ -9,17 +9,20 @@ import {
   CardContent,
   CardFooter,
 } from "../ui/card";
+import Link from "next/link";
 
 export default function TransactionCard({
   date,
   menu,
   isFinish,
   purchaseTotal,
+  image,
 }: {
   date: string;
   menu: Array<string>;
   isFinish: boolean;
   purchaseTotal: number;
+  image: string;
 }) {
   return (
     <Card className="p-2">
@@ -27,7 +30,7 @@ export default function TransactionCard({
         <div className="flex items-center gap-2">
           <ShoppingBasket strokeWidth={1} />
           <div className="">
-            <CardTitle className="text-xs">Smoothies</CardTitle>
+            <CardTitle className="text-xs">{menu[0]}</CardTitle>
             <CardDescription className="text-xs">{date}</CardDescription>
           </div>
         </div>
@@ -45,7 +48,7 @@ export default function TransactionCard({
       </CardHeader>
       <CardContent className="flex items-center p-2 gap-2">
         <Image
-          src="https://www.planetsmoothie.com/assets/webp/menu/newandfeatured/thumb.webp"
+          src={image}
           className="aspect-square w-10 h-10 object-contain border-white overflow-hidden rounded-sm"
           alt="smoothies image"
           width={400}
@@ -61,9 +64,11 @@ export default function TransactionCard({
           <p className="text-[10px]">Total Belanja</p>
           <b className="text-sm">Rp {purchaseTotal}</b>
         </div>
-        <button className="p-2 text-xs rounded-sm border border-emerald-600 text-emerald-600">
-          Beli Lagi
-        </button>
+        <Link href="/menus">
+          <button className="p-2 text-xs rounded-sm border border-emerald-600 text-emerald-600">
+            Beli Lagi
+          </button>
+        </Link>
       </CardFooter>
     </Card>
   );
