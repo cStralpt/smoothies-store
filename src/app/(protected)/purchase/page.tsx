@@ -37,7 +37,7 @@ export default function Purchase() {
               </label>
             </div>
             <div className="flex gap-2 items-center">
-              <div className="text-xs text-right text-emerald-950">
+              <div className="text-xs text-right text-emerald-950 hidden">
                 <p className="">Total</p>
                 <b className="">Rp 987.000</b>
               </div>
