@@ -14,7 +14,6 @@ import {
 } from "@/components/ui/drawer";
 
 export function PayDrawer() {
-  const randomNumber = Math.floor(100) ** Math.floor(5);
   return (
     <Drawer>
       <DrawerTrigger asChild>
@@ -41,8 +40,15 @@ export function PayDrawer() {
             </div>
           </div>
           <DrawerFooter className="flex-row gap-2 grow mt-4">
-            <Button className="grow bg-emerald-950 text-emerald-50">
-              Bayar Nanti
+            <Button
+              className="grow bg-emerald-950 text-emerald-50"
+              onClick={() =>
+                open(
+                  "https://link.dana.id/minta/2ti5ce4ldul?params=[source=request_money]",
+                )
+              }
+            >
+              App Dana
             </Button>
             <DrawerClose asChild className="grow">
               <Button variant="outline">Batal</Button>
