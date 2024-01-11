@@ -1,3 +1,4 @@
+import MenuList from "@/components/menus/MenuList";
 import { iconSize, iconStrokeWidth } from "@/constants/icon";
 import { CupSoda } from "lucide-react";
 import Image from "next/image";
@@ -19,55 +20,7 @@ export default function Menus() {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 p-4">
-          {[
-            {
-              image:
-                "https://www.planetsmoothie.com/assets/webp/menu/newandfeatured/thumb.webp",
-              menuName: "King Mango",
-            },
-            {
-              image:
-                "https://www.planetsmoothie.com/assets/webp/menu/planetfavorites/thumb.webp",
-              menuName: "King Avocado",
-            },
-            {
-              image:
-                "https://www.planetsmoothie.com/assets/webp/menu/energy/thumb.webp",
-              menuName: "King Strowberry",
-            },
-            {
-              image:
-                "https://www.planetsmoothie.com/assets/webp/menu/superfood/thumb.webp",
-              menuName: "King Dragon",
-            },
-            {
-              image:
-                "https://www.planetsmoothie.com/assets/webp/menu/protein/thumb.webp",
-              menuName: "King Chocolate",
-            },
-          ].map((smoothie) => (
-            <Link key={smoothie.menuName} href="/purchase?id=xxx123">
-              <div className="flex flex-col hover:opacity-50">
-                <div className="">
-                  <Image
-                    src={smoothie.image}
-                    className="aspect-auto w-full object-contain border-white"
-                    alt="smoothies image"
-                    width={400}
-                    height={400}
-                  />
-                </div>
-                <b className="w-full text-center bg-gray-200 text-emerald-950 p-4 rounded-b-[30px]">
-                  <p className="font-semibold text-emerald-600">
-                    {smoothie.menuName}
-                  </p>
-                  <p className="text-xs font-bold">Rp.15K</p>
-                </b>
-              </div>
-            </Link>
-          ))}
-        </div>
+        <MenuList />
       </div>
       <div className="sticky bottom-14 h-fit">
         <div className="h-fit bg-white/50 backdrop-blur border rounded-full overflow-hidden overflow-x-auto w-full hide-scrollbar">
