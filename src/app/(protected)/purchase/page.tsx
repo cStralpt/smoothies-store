@@ -1,14 +1,13 @@
 import { PayDrawer } from "@/components/purchase/PaymentDrawer";
-import { Button } from "@/components/ui/button";
+import PurchaseList from "@/components/purchase/PurchaseList";
 import { Checkbox } from "@/components/ui/checkbox";
 import { iconSize, iconStrokeWidth } from "@/constants/icon";
 import { CupSoda } from "lucide-react";
-import Image from "next/image";
 
 export default function Purchase() {
   return (
     <main className="grow">
-      <div className="p-2">
+      <div className="p-2 h-full">
         <div className="">
           <div className="flex gap-4 items-center p-2">
             <Checkbox id="smoothies" className="h-5 w-5" />
@@ -22,82 +21,7 @@ export default function Purchase() {
               </strong>
             </label>
           </div>
-          <div className="flex flex-col gap-4">
-            {[
-              {
-                menuName: "Avocado Cheese",
-                price: 98666,
-              },
-              {
-                menuName: "All Natural Fruit",
-                price: 67900,
-              },
-              {
-                menuName: "After Workout",
-                price: 137000,
-              },
-              {
-                menuName: "Avocado Cheese",
-                price: 98666,
-              },
-              {
-                menuName: "All Natural Fruit",
-                price: 67900,
-              },
-              {
-                menuName: "After Workout",
-                price: 137000,
-              },
-              {
-                menuName: "Avocado Cheese",
-                price: 98666,
-              },
-              {
-                menuName: "All Natural Fruit",
-                price: 67900,
-              },
-              {
-                menuName: "After Workout",
-                price: 137000,
-              },
-            ].map((smoothie) => (
-              <div key={smoothie.menuName} className="flex p-2 gap-2">
-                <Checkbox
-                  id={smoothie.menuName}
-                  name={smoothie.menuName}
-                  className="h-5 w-5"
-                />
-                <label htmlFor={smoothie.menuName} className="flex grow gap-2">
-                  <div className="overflow-hidden rounded-xl border">
-                    <Image
-                      src="https://www.planetsmoothie.com/assets/webp/menu/newandfeatured/thumb.webp"
-                      className="aspect-square w-24 h-24 object-contain border-white"
-                      alt="smoothies image"
-                      width={400}
-                      height={400}
-                    />
-                  </div>
-                  <div className="flex flex-col justify-between grow">
-                    <div className="">
-                      <h1 className="text-xs text-light">
-                        {smoothie.menuName}
-                      </h1>
-                      <b className="text-xs">Rp {smoothie.price}</b>
-                    </div>
-                    <div className="h-fit border rounded-xl ml-auto">
-                      <div className="flex px-2 text-emerald-600 text-xl gap-4">
-                        <button className="">-</button>
-                        <p className="grow text-center text-sm flex items-center justify-center">
-                          1
-                        </p>
-                        <button className="">+</button>
-                      </div>
-                    </div>
-                  </div>
-                </label>
-              </div>
-            ))}
-          </div>
+          <PurchaseList />
         </div>
       </div>
       <div className="sticky bottom-[50px] bg-white/50 backdrop-blur">
