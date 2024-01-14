@@ -30,7 +30,7 @@ export default function TransactionCard({
         <div className="flex items-center gap-2">
           <ShoppingBasket strokeWidth={1} />
           <div className="">
-            <CardTitle className="text-xs">{menu[0]}</CardTitle>
+            <CardTitle className="text-xs">Smoothies</CardTitle>
             <CardDescription className="text-xs">{date}</CardDescription>
           </div>
         </div>

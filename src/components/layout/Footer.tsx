@@ -1,3 +1,4 @@
+import { containerWidth } from "@/constants/container";
 import { iconStrokeWidth, iconSize } from "@/constants/icon";
 import {
   BadgeDollarSign,
@@ -10,7 +11,9 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="sticky bottom-0 bg-white border-t">
+    <footer
+      className={`sticky bottom-0 bg-white border-t w-full ${containerWidth}`}
+    >
       <nav className="w-full flex justify-between text-[10px] text-gray-500">
         {[
           {

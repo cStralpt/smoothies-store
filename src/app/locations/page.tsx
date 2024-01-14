@@ -1,10 +1,11 @@
 import MapLocation from "@/components/MapLocation";
 import React from "react";
 import { Map } from "lucide-react";
+import { containerWidth } from "@/constants/container";
 
 export default function Locations() {
   return (
-    <main className="grow">
+    <main className={`grow ${containerWidth}`}>
       <div className="p-4">
         <div className="rounded-full overflow-hidden aspect-square border-4 mb-8">
           <MapLocation

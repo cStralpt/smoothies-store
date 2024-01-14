@@ -1,8 +1,9 @@
+import { containerWidth } from "@/constants/container";
 import { Bell, ShoppingCart } from "lucide-react";
 
 export default function Header() {
   return (
-    <header className="flex p-2 w-full">
+    <header className={`flex p-2 w-full ${containerWidth}`}>
       <input
         type="text"
         placeholder="Avocado Cheese"

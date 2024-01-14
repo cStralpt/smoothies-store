@@ -1,8 +1,9 @@
 import TransactionCard from "@/components/transaction/TransactionCard";
+import { containerWidth } from "@/constants/container";
 
 export default function Transaction() {
   return (
-    <main className="grow p-4">
+    <main className={`grow p-4 w-full ${containerWidth}`}>
       <div className="flex flex-col gap-4">
         {[
           {

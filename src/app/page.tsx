@@ -2,11 +2,12 @@ import { Slider } from "@/components/home/Slider";
 import Image from "next/image";
 import { getUserAuth } from "@/lib/auth/utils";
 import Link from "next/link";
+import { containerWidth } from "@/constants/container";
 
 export default async function Home() {
   const { session } = await getUserAuth();
   return (
-    <main className="grow flex flex-col gap-16">
+    <main className={`grow flex flex-col gap-16 w-full ${containerWidth}`}>
       {session ? (
         <pre className="bg-card p-4 rounded-sm overflow-hidden">
           {JSON.stringify(session, null, 2)}
@@ -20,6 +21,31 @@ export default async function Home() {
         </strong>
         <div className="grid grid-cols-4 grid-rows-3 gap-4">
           {[
+            {
+              image:
+                "https://smoothiefactory.net/wp-content/uploads/2019/05/Juice.png",
+              menuName: "King Mango",
+            },
+            {
+              image:
+                "https://smoothiefactory.net/wp-content/uploads/2019/05/Real-Fruit-Smoothies.png",
+              menuName: "King Avocado",
+            },
+            {
+              image:
+                "https://smoothiefactory.net/wp-content/uploads/2019/05/All-Natural-Frozen-Yogurt.png",
+              menuName: "King Strowberry",
+            },
+            {
+              image:
+                "https://smoothiefactory.net/wp-content/uploads/2020/07/Salad-cup-1.png",
+              menuName: "King Dragon",
+            },
+            {
+              image:
+                "https://smoothiefactory.net/wp-content/uploads/2020/07/Healthy-Halo-Cup.jpg",
+              menuName: "King Chocolate",
+            },
             {
               image:
                 "https://smoothiefactory.net/wp-content/uploads/2019/05/Juice.png",
