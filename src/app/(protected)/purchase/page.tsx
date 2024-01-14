@@ -1,13 +1,12 @@
 import { PayDrawer } from "@/components/purchase/PaymentDrawer";
 import PurchaseList from "@/components/purchase/PurchaseList";
 import { Checkbox } from "@/components/ui/checkbox";
-import { containerWidth } from "@/constants/container";
 import { iconSize, iconStrokeWidth } from "@/constants/icon";
 import { CupSoda } from "lucide-react";
 
 export default function Purchase() {
   return (
-    <main className={`grow w-full ${containerWidth}`}>
+    <main className="grow w-full max-w-[400px]">
       <div className="p-2 h-full">
         <div className="">
           <div className="flex gap-4 items-center p-2">

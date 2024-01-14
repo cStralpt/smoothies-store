@@ -2,12 +2,11 @@ import { Slider } from "@/components/home/Slider";
 import Image from "next/image";
 import { getUserAuth } from "@/lib/auth/utils";
 import Link from "next/link";
-import { containerWidth } from "@/constants/container";
 
 export default async function Home() {
   const { session } = await getUserAuth();
   return (
-    <main className={`grow flex flex-col gap-16 w-full ${containerWidth}`}>
+    <main className="grow flex flex-col gap-16 w-full max-w-[400px]">
       {session ? (
         <pre className="bg-card p-4 rounded-sm overflow-hidden">
           {JSON.stringify(session, null, 2)}

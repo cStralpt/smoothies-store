@@ -3,13 +3,10 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Pencil } from "lucide-react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import { containerWidth } from "@/constants/container";
 
 export default function Account() {
   return (
-    <main
-      className={`p-4 grow flex flex-col gap-8 text-emerald-950 w-full ${containerWidth}`}
-    >
+    <main className="p-4 grow flex flex-col gap-8 text-emerald-950 w-full max-w-[400px]">
       <div className="flex justify-between items-center">
         <div className="flex gap-4 items-center">
           <Avatar className="h-20 w-20">

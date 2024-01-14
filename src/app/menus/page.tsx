@@ -1,11 +1,10 @@
 import MenuList from "@/components/menus/MenuList";
-import { containerWidth } from "@/constants/container";
 import { iconSize, iconStrokeWidth } from "@/constants/icon";
 import { CupSoda } from "lucide-react";
 
 export default function Menus() {
   return (
-    <main className={`grow flex flex-col gap-4 py-4 w-full ${containerWidth}`}>
+    <main className="grow flex flex-col gap-4 py-4 w-full max-w-[400px]">
       <div className="">
         <div className="flex p-4 bg-emerald-800 text-emerald-50 items-center my-8 gap-4">
           <div className="flex flex-col items-center justify-center">
