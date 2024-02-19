@@ -15,7 +15,7 @@ export default function Account() {
           </Avatar>
           <div className="">
             <b className="text-xl">Satria Alipatullah</b>
-            <p className="text-xs font-light">085930970697</p>
+            <p className="text-xs font-light">0123456789</p>
             <p className="text-xs font-light">satrialipatullah@gmail.com</p>
           </div>
         </div>
